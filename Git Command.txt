@@ -1,0 +1,16 @@
+"""
+git command
+"""
+git init  //把当前目录变成Git可管理的仓库。
+git add <file>  //把文件添加到仓库。
+git commit -m "remark information"   //把文件提交到仓库 -m 后面加上本次提交的说明。
+git status   //查看当前仓库状态
+git diff <file>  //显示文件在不同时刻提交的内容差异。
+git log   //查看历史记录
+git reset --hard HEAD^  //回退到上次提交的版本
+git reset --hard HEAD^^  //回退到上上次提交的版本。
+git reflog   //查看历次命令
+git reset --hard <commitID>  //转到指定的commitID 版本。
+git diff HEAD -- <file>  //查看工作区和版本库里的文件的区别。
+git checkout -- <file>   //将暂存区的版本替换工作区的版本。
+git reset HEAD <file>   //将暂存区的修改撤销掉，重新放回工作区。
